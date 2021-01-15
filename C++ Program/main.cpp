@@ -1,6 +1,6 @@
 #include "start.h"
-int main()
+int main(int argc, char **args)
 {
-    start();
+    start(argc, args);
     return 0;
 }
