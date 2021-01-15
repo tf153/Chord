@@ -8,6 +8,10 @@ void server(vector<string> argv)
     {
         command_arg_error();
     }
+    else if (stoi(argv[4]) < 1000 || stoi(argv[4]) > 65535)
+    {
+        port_error();
+    }
     else
     {
         cout << "server done\n";

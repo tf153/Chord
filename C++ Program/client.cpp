@@ -7,6 +7,10 @@ void client(vector<string> argv)
     {
         command_arg_error();
     }
+    else if (stoi(argv[4]) < 1000 || stoi(argv[4]) > 65535 || stoi(argv[8]) < 1000 || stoi(argv[8]) > 65535)
+    {
+        port_error();
+    }
     else
     {
         cout << "client done\n";
