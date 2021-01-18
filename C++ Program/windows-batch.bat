@@ -1,4 +1,4 @@
-@echo OFF
+@echo
 
 :: Compiling the program for windows
 g++ main.cpp start.cpp server.cpp client.cpp error.cpp -o chord
